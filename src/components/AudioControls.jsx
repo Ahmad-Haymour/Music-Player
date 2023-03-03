@@ -15,10 +15,8 @@ import { styled, Stack } from "@mui/material"
 const Div = styled('div')(({theme})=> ({
     display: 'flex',
     justifyContent: 'space-between',
-    // width:'100%',
     paddingBottom: theme.spacing(.5),
-    // backgroundColor:'red',
-    margin:'0 auto'
+    margin:'0 0 0 25px'
 
 }))
 
@@ -30,7 +28,7 @@ export default function SoundControls() {
     return (
         <Div sx={{
             width: (location.pathname !== '/music_player') ? '400px': '400px'
-        }} > 
+        }} >
             <Stack direction='row' spacing={5}
                 sx={{
                 display:'flex', alignItems:'center', justifyContent:'center', 
@@ -46,7 +44,6 @@ export default function SoundControls() {
 
                 <SkipNextIcon sx={{color:'silver', '&:hover': {color:'white', cursor:'pointer'}, height: 42, width: 42, fontWeight:'bold' }} onClick={skipForward} />
                 <FastForwardIcon sx={{color:'silver', '&:hover': {color:'white', cursor:'pointer'}, height: 25, width: 25 }} onClick={nextAudio} />
-        
             </Stack>
         </Div>
     

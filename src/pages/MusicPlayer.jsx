@@ -10,7 +10,6 @@ import songs from "../hooks/audios-db"
 import {styled,  Paper, Box, Typography,} from "@mui/material"
 import IconButton from '@mui/material/IconButton';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-// import ReplayIcon from '@mui/icons-material/Replay';
 
 const Div = styled('div')(({theme})=> ({
     backgroundSize: 'cover',
@@ -26,6 +25,7 @@ const CustomPaper = styled(Paper)(({theme})=> ({
     display: 'flex',
     flexDirection:'column',
     justifyContent: 'center',
+    gap:'30px',
     padding: theme.spacing(3.6)
 }))
 
@@ -54,7 +54,7 @@ export default function MusicPlayer({timer}){
                 </Box>
                     
                 <CustomPaper>
-                    <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between'}} >
+                    <Box sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }} >
 
                         <SoundControls timer={timer} />  
                         

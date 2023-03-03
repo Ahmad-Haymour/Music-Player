@@ -24,7 +24,6 @@ const CustomPaper = styled(Paper)(({theme})=> ({
     padding: theme.spacing(5),
     paddingBottom: theme.spacing(3),
     paddingTop: theme.spacing(3),
-    // padding: '0 55px',
     height: '100%',
     width: '100%',
     display: 'flex',
@@ -38,7 +37,8 @@ export default function GlobalPlayer({timer}) {
     
     const audio = useAudio()
     const { addToFavorite, redColor, index } = audio.data
-
+    const title = songs[index].title
+    
     return (
         <Div>
             <Box  sx={{display:'flex', flexDirection: 'column', alignItems:'center'}} >            
@@ -51,8 +51,13 @@ export default function GlobalPlayer({timer}) {
                         
                         <AudioControls />
 
-                        <Typography color='purple' variant='h4' sx={{textShadow:'-1.5px 1.5px 2px darkgray', marginRight: '2rem'}} >
-                                {songs[index]?.title}
+                        <Typography color='purple' variant='h4' sx={{textShadow:'-1.5px 1.5px 2px darkgray', marginRight: '2rem', width:'250px'}} >
+                                {
+                                    (title.length > 11) ? 
+                                    title?.slice(0,11) + '...'
+                                    :
+                                    title
+                                }
                         </Typography>
 
                         <IconButton aria-label="favorite"  sx={{ width: '50px'}} onClick={addToFavorite } >

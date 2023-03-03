@@ -1,16 +1,15 @@
 import React, {useState} from 'react'
 import {Routes, Route, useLocation} from "react-router-dom"
 import Navigator from "./components/Navigator"
+import { AudioProvider } from './hooks/useAudio';
 import GlobalPlayer from "./components/GlobalPlayer"
+import './App.css';
 
 import Home from './pages/Home'
 import MusicPlayer from "./pages/MusicPlayer"
 import Playlist from "./pages/Playlist"
 import Favorite from "./pages/Favorite"
 
-import { AudioProvider } from './hooks/useAudio';
-
-import './App.css';
 
 function App() {
 
