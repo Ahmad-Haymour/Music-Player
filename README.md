@@ -1,24 +1,25 @@
-
-
 # Music Player
 
-Try it now  => [Music Player](https://music-player22.netlify.app/).
+Deployed on Netlify  => [Music Player](https://music-player22.netlify.app/).
 
-## React
+---
 
-I used the following technology / framework in my project:
+## Built with:
 
-- JavaScript / React
+- React
 - Material UI
+- CSS
+
+[![My Skills](https://skillicons.dev/icons?i=react,materialui,css)](https://skillicons.dev)
+
 ---
 
 ## Installation / Run
 
-To run the project locally, enter the following in the command line / bash:
+Clone the repo & Install NPM packages:
 
 ```console
-$ git clone https://github.com/Ahmad-Haymour/Pixel-Art.git
-$ cd pixel-art
+$ git clone https://github.com/Ahmad-Haymour/Music-Player.git
 $ npm install
 $ npm run start
 ```
